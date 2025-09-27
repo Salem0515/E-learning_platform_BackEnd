@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')('sk_test_51RUUo3Fadq1Cj8n3RguwkuAz7fnv2WMqrzCoyCClQJtj1pmeCJtMpJgHZc77GPpOMm4062g6fmPWsHp4rvxViJKx00b6sxlLRA');
 const Course = require('../models/Course');
 const Enrollment = require('../models/Enrollment');
 const User = require('../models/User');
